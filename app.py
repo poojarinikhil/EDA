@@ -7,10 +7,7 @@ from streamlit_pandas_profiling import st_profile_report
 # Web App Title
 st.markdown('''
 # **The EDA App**
-This is the **EDA App** created in Streamlit using the **pandas-profiling** library.
-**Credit:** App built in `Python` + `Streamlit` by [Chanin Nantasenamat](https://medium.com/@chanin.nantasenamat) (aka [Data Professor](http://youtube.com/dataprofessor))
----
-''')
+This is the **EDA App** created in Streamlit using the **pandas-profiling** library''')
 
 # Upload CSV data
 with st.sidebar.header('1. Upload your CSV data'):
