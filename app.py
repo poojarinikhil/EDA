@@ -34,7 +34,7 @@ else:
     if st.button('Press to use Example Dataset'):
         # Example data
         @st.cache
-        def load_data()
+        def load_data():
             a = pd.DataFrame(
                 np.random.rand(100, 5),
                 columns=['a', 'b', 'c', 'd', 'e']
