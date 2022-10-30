@@ -70,7 +70,7 @@ def main():
 
             if st.sidebar.checkbox('🔢 Value Counts', value=False):
                 st.markdown('## Value Counts')
-                col = st.selectbox('Select Column', list(df.columns), key='val_col')
+                col = st.selectbox('Select Column', list(df.columns), key= None)
                 st.write(df[col].value_counts())
 
             if st.sidebar.checkbox('🧬 Unique Elements', value=False):
@@ -148,7 +148,7 @@ def main():
                 title = slide.shapes.title
                 subtitle = slide.placeholders[1]
                 title.text = "EDA Presentation"
-                subtitle.text = "Subtitle text here!"
+                subtitle.text = "Credits to Aditya, Nikhil, Shantanu"
                 top = Inches(7)
                 left = Inches(4.5)
                 width = height = Inches(1)
@@ -300,8 +300,7 @@ def main():
                 nb = nbf.v4.new_notebook()
                 title_text = "# Auto-generated EDA notebook.\n" \
                              "## Welcome to EDA Notebook." \
-                             "\n*Due to Streamlit´s file_uploader current limitations, you must manually insert the " \
-                             "path of the CSV file.*"
+                              "path of the CSV file.*"
                 import_libraries_code = """# Import all necessary libraries:
 import pandas as pd
 import numpy as np
