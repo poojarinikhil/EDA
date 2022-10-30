@@ -1,2 +1,2 @@
 # EDA
- Exploratory Data Analysis of any dataset 
+ Exploratory Data Analysis of any dataset using streamlit 
